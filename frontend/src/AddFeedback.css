@@ -1,0 +1,75 @@
+.feedback-container {
+    max-width: 500%;
+    margin: 20px auto;
+    padding: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #5c6bc0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-input {
+    width: 150%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; 
+}
+
+.form-group label {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #512da8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    /* background-color: #512da8; */
+}
+
+
+/* ---------------------- */
+
+.feedback-table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+}
+
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.feedback-table th, .feedback-table td {
+    border: 1px solid #512da8;
+    padding: 8px;
+    text-align: left;
+}
+
+.feedback-table th {
+    background-color: #5c6bc0;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Umiya Powder Coating",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.15.16",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "easyinvoice": "^3.0.47",
+    "express": "^4.19.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "init": "^0.1.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "react": "^18.3.1",
+    "react-lottie": "^1.2.4",
+    "react-router-dom": "^6.23.0",
+    "react-to-print": "^2.15.1",
+    "recharts": "^2.1.8"
+  }
+}

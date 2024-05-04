@@ -1,0 +1,277 @@
+.bodyWrap.dashboardPage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .topPanelWrap {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  
+  .topPanelData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .topPanelDataBox {
+    padding: 30px 20px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(135, 131, 215, 0.2);
+    border-radius: 15px;
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin-bottom: 39px; 
+  }
+  
+  .topPanelDataBox:first-child {
+    background-color: #512da8;
+  }
+  
+  .topPanelDataBox:nth-child(2),
+  .topPanelDataBox:last-child {
+    background-color: #512da8;
+  }
+  
+  .topPanelDataBox h3,
+  .topPanelDataBox h2 {
+    display: inline; 
+  }
+  
+  .topPanelDataIcon svg {
+    font-size: 35px;
+    margin-right: 15px;
+    color: #ef5f63;
+  }
+  
+  .topPanelDataRangeBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 15px;
+    height: 100%;
+    width: 50%;
+  }
+  
+  .topPanelDataRangeBox .topPanelDataIcon {
+    margin: 0 0 0 20px;
+  }
+  
+  .topPanelSeperator {
+    background-color: #acadb0;
+    width: 100%;
+    height: 1px;
+  }
+  
+  .topPanelBottomText {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .topPanelDataText {
+    font-size: 1.7em;
+    color: #512da8;
+  }
+  
+  .dataRangeSelect {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    padding: 0 10px;
+    background-color: rgba(135, 131, 215, 0.2);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .dataRangeSelect option {
+    color: inherit;
+    background-color: rgba(135, 131, 215, 0.2);
+  }
+  
+  .dataRangeSelect::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  
+  .topPanelHeaderInline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .upcomingEventWrap {
+    margin: 10px 0;
+    height: 60%;
+  }
+  
+  .upcomingEventDate {
+    border-left: 2px solid #ef5f63;
+  }
+  
+
+/* popups */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_inner {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup_inner h3 {
+  margin-bottom: 10px;
+}
+
+.popup_inner input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.popup_inner button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.popup_inner button:last-child {
+  margin-right: 0;
+  background-color: #dc3545;
+}
+
+.popup_inner button:hover {
+  background-color: #0056b3;
+}
+
+.popup_inner button:last-child:hover {
+  background-color: #c82333;
+}
+
+
+
+  /* responsive */
+  
+  @media screen and (max-width: 1024px) {
+    .topPanelDataRangeBox {
+      width: 100%;
+    }
+    .topPanelDataRangeBox h3 {
+      width: 30%;
+    }
+    .topPanelDataRangeBox .topPanelDataIcon {
+      width: auto;
+      margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topPanelData {
+      flex-direction: column;
+    }
+    .topPanelDataBox {
+      width: 100%;
+      align-items: center;
+      flex-direction: row;
+      padding: 5px 20px;
+    }
+    .topPanelDataSummary {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 70%;
+    }
+    .topPanelDataSummary p {
+      margin-right: 20px;
+    }
+    .topPanelDataIcon {
+      width: 10%;
+    }
+    .topPanelSeperator {
+      width: 0;
+    }
+    .topPanelDataBox div:last-child {
+      width: 20%;
+    }
+    .upcomingEventWrap {
+      height: 100%;
+      width: 25%;
+    }
+    .topPanelHeaderInline {
+      width: 30% !important;
+    }
+  }
+  
+  /* Additional styles for the table */
+  
+  .bodyWrap.dashboardPage .tableWrap {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .bodyWrap.dashboardPage table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bodyWrap.dashboardPage h1 {
+    color: #5c6bc0;
+  }
+  
+  .bodyWrap.dashboardPage th,
+  .bodyWrap.dashboardPage td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: black;
+  }
+  
+  .bodyWrap.dashboardPage th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .bodyWrap.dashboardPage tr:hover {
+    background-color: #f5f5f5;
+  }
+  
